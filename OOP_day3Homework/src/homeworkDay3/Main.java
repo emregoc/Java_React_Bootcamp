@@ -51,10 +51,14 @@ public class Main {
 		System.out.println("Burasi Instructor Ekleme, Silme, Guncelleme");
 		InstructorManager instructorManager = new InstructorManager();
 		instructorManager.addInstructor(instructors); // burasi InstructorManager icerisinde ki method
-		studentManager.delete(instructors); // burasi Usermanager class'ý içinde ki method, InstructorManager
+		instructorManager.delete(instructors); // burasi Usermanager class'ý içinde ki method, InstructorManager
 											// UserManager'i extend ettigi icin bu methodu kullanabildik
-		studentManager.update(instructors); // ayni sekilde burasida oyle
 		
+		instructorManager.update(instructors); // ayni sekilde burasida oyle
+		
+		System.out.println("-------------------------");
+		
+		usermanager.delete(instructors);
 
 	}
 

@@ -15,7 +15,8 @@ public class UserManager {
 		
 	}
 	
-	public void delete(User user) {
+	public void delete(User user) { // InstructorManager ve StudentManager'da override yaptigimiz icin bu delete komutu
+									// ilk basta calisir fakat sonra @Override yaptigimiz diger delete methodlari calisir
 		System.out.println(user.getId() + " id ye ait " + user.getFirstName()  + " isimli kisi silindi");
 	}
 	
